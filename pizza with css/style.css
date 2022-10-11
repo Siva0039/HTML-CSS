@@ -1,0 +1,157 @@
+*{
+    margin:10px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    
+
+}
+
+
+body {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    gap: 10;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0, 0, 0,0.7)), url(images/2019-04-25.jpeg);
+
+    background-size: cover;
+    background-repeat:repeat-x; 
+}
+.img-pizza {
+    height: 100px;
+    width: 100px;
+}
+
+h1  {
+    color: white;
+}
+
+p {
+    color: white;
+}
+legend {
+    color: white;
+}
+
+.inputbox {
+    position: relative;
+    width: 100vh;
+}
+
+.inputbox input {
+    width: 25%;
+    padding:2px;
+    border: 1px solid darkorange;
+    border-radius: 30px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0,2s;    
+}
+.inputbox label {
+    position: absolute;
+    left: 5px;
+    top: -2px;
+    padding: 5px;
+    pointer-events: none;
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.inputbox textarea {
+    width: 25%;
+    padding:2px;
+    border: 1px solid darkorange;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0,2s;  
+}
+.inputbox textarea::placeholder  {
+    padding: 5vh;
+    right: 10px;
+    font-size: 1em;
+    font-family: 'poppins', 'Times New Roman', Times, serif;
+}
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label
+{
+color: white;
+    transform: translateX(14px) translateY(-9px);
+    font-size: 0.7em;
+    padding: 0 5px;
+    background: darkorange;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    letter-spacing: 0.2em;
+
+}
+.pizzaspecs {
+    color: white;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.2s;
+}
+
+.toppings {
+    color: white;
+}
+.numbers {
+    color: white;
+}
+
+
+.box input {
+    position: relative;
+    display: inline-block;
+    font-size: 17px;
+    left: -1px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+
+input[type="submit"]
+{
+    position:relative;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    top: 10px;
+    left: 850px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #ffc107;
+    color: black;
+}
+input[type="submit"]:hover
+{
+    background: #ff5722;
+    
+}
+input[type="reset"]
+{
+    position:relative;
+    border-radius: 25 0px 25px 0;
+    width: 150px;
+    height: 50px;
+    top: -70px;
+    left: 690px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #ffc107;
+    color: black;
+}
+input[type="reset"]:hover
+{
+    background: #ff5722;
+    
+}
+
